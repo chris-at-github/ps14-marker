@@ -21,18 +21,18 @@ tt_content {
 			40 = EXT:ps14_site/Resources/Private/Partials/
 		}
 
-		dataProcessing {
-			200 = Ps14\Marker\DataProcessing\ModuleProcessor
-			200 {
-				importCss {
-					10 = /assets/css/modules/marker.css
-				}
-
-				importJs {
-					10 = /assets/js/modules/marker.js
-				}
-			}
-		}
+#		dataProcessing {
+#			200 = Ps14\Marker\DataProcessing\ModuleProcessor
+#			200 {
+#				importCss {
+#					10 = /assets/css/modules/marker.css
+#				}
+#
+#				importJs {
+#					10 = /assets/js/modules/marker.js
+#				}
+#			}
+#		}
 	}
 }
 
@@ -41,47 +41,61 @@ tt_content {
 plugin.tx_ps14marker {
 	settings {
 		images {
-			main {
-				maxWidth = 1200
-				cropVariant = desktop
-
+			aside {
+				width = 1000
+				cropVariant = default
 				mediaQueries {
-					0 {
-						maxWidth = 1200
+					992 {
+						width = 555
 						cropVariant = desktop
 						mediaQuery = (min-width: 992px)
 					}
-					1 {
-						maxWidth = 992
-						cropVariant = desktop
+
+					768 {
+						width = 935
+						cropVariant = mobile
 						mediaQuery = (min-width: 768px)
 					}
-					2 {
-						maxWidth = 768
+
+					576 {
+						width = 740
 						cropVariant = mobile
 						mediaQuery = (min-width: 576px)
 					}
-					3 {
-						maxWidth = 576
+
+					0 {
+						width = 545
 						cropVariant = mobile
 						mediaQuery = (min-width: 0px)
 					}
 				}
 			}
 
-			element {
-				maxWidth = 480
+			above {
+				width = 1140
 				cropVariant = default
-
 				mediaQueries {
-					1 {
-						maxWidth = 480
-						cropVariant = default
+					992 {
+						width = 1140
+						cropVariant = desktop
+						mediaQuery = (min-width: 992px)
+					}
+
+					768 {
+						width = 935
+						cropVariant = desktop
 						mediaQuery = (min-width: 768px)
 					}
-					3 {
-						maxWidth = 320
-						cropVariant = default
+
+					576 {
+						width = 740
+						cropVariant = mobile
+						mediaQuery = (min-width: 576px)
+					}
+
+					0 {
+						width = 545
+						cropVariant = mobile
 						mediaQuery = (min-width: 0px)
 					}
 				}
