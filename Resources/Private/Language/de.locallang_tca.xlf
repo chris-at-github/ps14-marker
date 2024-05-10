@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2024-03-25T23:00:00Z" product-name="ps14_modulor" target-language="de">
+	<file source-language="en" datatype="plaintext" original="messages" date="2024-03-25T23:00:00Z" product-name="ps14_marker" target-language="de">
 		<header/>
 		<body>
 			<trans-unit id="title">
-				<target>Ps14 Modulor</target>
+				<target>Ps14 Marker</target>
 			</trans-unit>
 			<trans-unit id="description">
-				<target>TYPO3 Extension serves as a template for TYPO3 modules</target>
+				<target>Verwaltung von Markierungen und ihren Beschreibungen auf Bildern</target>
 			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">

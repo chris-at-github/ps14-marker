@@ -1,4 +1,4 @@
-# Ps14 Modulor
+# Ps14 Marker
 Beispiel TYPO3 Extension für die Erstellung neuer Module auf Basis von Fluid Styled Content.
 
 ## Implementierung
@@ -6,7 +6,7 @@ Beispiel TYPO3 Extension für die Erstellung neuer Module auf Basis von Fluid St
 2. .git Verzeichnis entfernen
 3. Neues Git-Repository unter github.com anlegen
 4. Git-Repository in Extension Verzeichnis einfügen und in PHPStorm registrieren
-5. Ersetzung ps14_modulor, modulor und Ps14Modulor im gesamten Verzeichnis durch neuen Extension Key
+5. Ersetzung ps14_marker, marker und Ps14Marker im gesamten Verzeichnis durch neuen Extension Key
 6. Nötige Erweiterungen umsetzen
 
 ## Installation

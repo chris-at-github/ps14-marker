@@ -1,7 +1,7 @@
 {
-	"name": "ps14/modulor",
+	"name": "ps14/marker",
 	"type": "typo3-cms-extension",
-	"description": "TYPO3 Extension serves as a template for TYPO3 modules",
+	"description": "TYPO3 extension for managing annotations and their descriptions on images",
 	"keywords": [
 		"TYPO3",
 		"extension"
@@ -14,7 +14,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Ps14\\Modulor\\": "Classes"
+			"Ps14\\Marker\\": "Classes"
 		}
 	},
 	"license": "closed",
@@ -26,7 +26,7 @@
 	],
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "ps14_modulor"
+			"extension-key": "ps14_marker"
 		}
 	}
 }

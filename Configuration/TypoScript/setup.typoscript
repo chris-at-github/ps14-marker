@@ -1,35 +1,35 @@
 // ---------------------------------------------------------------------------------------------------------------------
 // tt_content Definition
 tt_content {
-	ps14_modulor =< lib.contentElement
-	ps14_modulor {
-		templateName = Modulor.html
+	ps14_marker =< lib.contentElement
+	ps14_marker {
+		templateName = Marker.html
 		layoutRootPaths {
-			10 = EXT:ps14_modulor/Resources/Private/Layouts/
-			20 = EXT:ps14_site/Resources/Private/Extensions/Modulor/Layouts/
+			10 = EXT:ps14_marker/Resources/Private/Layouts/
+			20 = EXT:ps14_site/Resources/Private/Extensions/Marker/Layouts/
 		}
 
 		templateRootPaths {
-			10 = EXT:ps14_modulor/Resources/Private/Templates/
-			20 = EXT:ps14_site/Resources/Private/Extensions/Modulor/Templates/
+			10 = EXT:ps14_marker/Resources/Private/Templates/
+			20 = EXT:ps14_site/Resources/Private/Extensions/Marker/Templates/
 		}
 
 		partialRootPaths {
-			10 = EXT:ps14_modulor/Resources/Private/Partials/
-			20 = EXT:ps14_site/Resources/Private/Extensions/Modulor/Partials/
+			10 = EXT:ps14_marker/Resources/Private/Partials/
+			20 = EXT:ps14_site/Resources/Private/Extensions/Marker/Partials/
 			30 = EXT:ps14_foundation/Resources/Private/Partials/
 			40 = EXT:ps14_site/Resources/Private/Partials/
 		}
 
 		dataProcessing {
-			200 = Ps14\Modulor\DataProcessing\ModuleProcessor
+			200 = Ps14\Marker\DataProcessing\ModuleProcessor
 			200 {
 				importCss {
-					10 = /assets/css/modules/modulor.css
+					10 = /assets/css/modules/marker.css
 				}
 
 				importJs {
-					10 = /assets/js/modules/modulor.js
+					10 = /assets/js/modules/marker.js
 				}
 			}
 		}
@@ -38,7 +38,7 @@ tt_content {
 
 // ---------------------------------------------------------------------------------------------------------------------
 // Settings
-plugin.tx_ps14modulor {
+plugin.tx_ps14marker {
 	settings {
 		images {
 			main {
