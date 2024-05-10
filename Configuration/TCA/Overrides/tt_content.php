@@ -29,16 +29,19 @@ $GLOBALS['TCA']['tt_content']['types']['ps14_marker']['columnsOverrides']['bodyt
 	'richtextConfiguration' => 'ps14Default',
 ];
 
+// Maximale Bildanzahl
+$GLOBALS['TCA']['tt_content']['types']['ps14_marker']['columnsOverrides']['image']['config']['maxitems'] = 1;
+
 // Crop-Varianten fuer Image-Feld
 $GLOBALS['TCA']['tt_content']['types']['ps14_marker']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] = \Ps14\Site\Service\TcaService::getCropVariants(
 	[
-		'thumbnail' => [
-			'allowedAspectRatios' => ['16_9', '4_3'],
+		'mobile' => [
+			'allowedAspectRatios' => ['16_9', '4_3', 'NaN'],
 			'selectedRatio' => '16_9'
 		],
-		'fullsize' => [
-			'allowedAspectRatios' => ['21_9', 'NaN'],
-			'selectedRatio' => '21_9'
+		'desktop' => [
+			'allowedAspectRatios' => ['16_9', '4_3', 'NaN'],
+			'selectedRatio' => '4_3'
 		]
 	]
 );
@@ -71,20 +74,10 @@ $GLOBALS['TCA']['tt_content']['types']['ps14_marker']['columnsOverrides']['tx_fo
 			'showitem' => \Ps14\Site\Service\TcaService::getShowitem(
 				['general', 'appearance', 'access'],
 				[
-					'general' => '--palette--;;general, --palette--;;header, description, media,'
+					'general' => '--palette--;;general, --palette--;;header, description,'
 				],
 				'tx_foundation_domain_model_elements'
 			)
 		],
 	]
 ];
-
-// Anpassung Crop-Varianten fuer Elements
-$GLOBALS['TCA']['tt_content']['types']['ps14_marker']['columnsOverrides']['tx_foundation_elements']['config']['overrideChildTca']['columns']['media']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] = \Ps14\Site\Service\TcaService::getCropVariants(
-	[
-		'default' => [
-			'allowedAspectRatios' => ['16_9'],
-			'selectedRatio' => '16_9'
-		],
-	]
-);
