@@ -14,3 +14,12 @@ mod.wizards.newContentElement.wizardItems {
 		show := addToList(ps14_marker)
 	}
 }
+
+[field('CType') === 'ps14_marker']
+	TCEFORM.tt_content {
+		tx_foundation_variant {
+			altLabels.default = LLL:EXT:ps14_marker/Resources/Private/Language/locallang_tca.xlf:tt_content.variant.image-aside
+			addItems.image-above = LLL:EXT:ps14_marker/Resources/Private/Language/locallang_tca.xlf:tt_content.variant.image-above
+		}
+	}
+[END]

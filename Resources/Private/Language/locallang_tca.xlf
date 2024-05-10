@@ -10,6 +10,13 @@
 				<source>Managing annotations and their descriptions on images</source>
 			</trans-unit>
 
+			<trans-unit id="tt_content.variant.image-aside">
+				<source>Image alongside description</source>
+			</trans-unit>
+			<trans-unit id="tt_content.variant.image-above">
+				<source>Large image above description</source>
+			</trans-unit>
+
 			<trans-unit id="elements.record-type.default">
 				<source>Default</source>
 			</trans-unit>
