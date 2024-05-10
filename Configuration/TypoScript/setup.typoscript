@@ -1,0 +1,91 @@
+// ---------------------------------------------------------------------------------------------------------------------
+// tt_content Definition
+tt_content {
+	ps14_modulor =< lib.contentElement
+	ps14_modulor {
+		templateName = Modulor.html
+		layoutRootPaths {
+			10 = EXT:ps14_modulor/Resources/Private/Layouts/
+			20 = EXT:ps14_site/Resources/Private/Extensions/Modulor/Layouts/
+		}
+
+		templateRootPaths {
+			10 = EXT:ps14_modulor/Resources/Private/Templates/
+			20 = EXT:ps14_site/Resources/Private/Extensions/Modulor/Templates/
+		}
+
+		partialRootPaths {
+			10 = EXT:ps14_modulor/Resources/Private/Partials/
+			20 = EXT:ps14_site/Resources/Private/Extensions/Modulor/Partials/
+			30 = EXT:ps14_foundation/Resources/Private/Partials/
+			40 = EXT:ps14_site/Resources/Private/Partials/
+		}
+
+		dataProcessing {
+			200 = Ps14\Modulor\DataProcessing\ModuleProcessor
+			200 {
+				importCss {
+					10 = /assets/css/modules/modulor.css
+				}
+
+				importJs {
+					10 = /assets/js/modules/modulor.js
+				}
+			}
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Settings
+plugin.tx_ps14modulor {
+	settings {
+		images {
+			main {
+				maxWidth = 1200
+				cropVariant = desktop
+
+				mediaQueries {
+					0 {
+						maxWidth = 1200
+						cropVariant = desktop
+						mediaQuery = (min-width: 992px)
+					}
+					1 {
+						maxWidth = 992
+						cropVariant = desktop
+						mediaQuery = (min-width: 768px)
+					}
+					2 {
+						maxWidth = 768
+						cropVariant = mobile
+						mediaQuery = (min-width: 576px)
+					}
+					3 {
+						maxWidth = 576
+						cropVariant = mobile
+						mediaQuery = (min-width: 0px)
+					}
+				}
+			}
+
+			element {
+				maxWidth = 480
+				cropVariant = default
+
+				mediaQueries {
+					1 {
+						maxWidth = 480
+						cropVariant = default
+						mediaQuery = (min-width: 768px)
+					}
+					3 {
+						maxWidth = 320
+						cropVariant = default
+						mediaQuery = (min-width: 0px)
+					}
+				}
+			}
+		}
+	}
+}

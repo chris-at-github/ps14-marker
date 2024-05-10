@@ -1,0 +1,60 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:fo="http://typo3.org/ns/Ps14/Foundation/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+	<f:section name="Main">
+		<f:render section="Bodytext" arguments="{_all}" />
+		<f:render section="Images" arguments="{_all}" />
+		<f:render section="Elements" arguments="{_all}" />
+	</f:section>
+
+	<f:section name="Bodytext">
+		<f:if condition="{data.bodytext}">
+			<f:render partial="Content/Bodytext" arguments="{bodytext: data.bodytext}" />
+		</f:if>
+	</f:section>
+
+	<f:section name="Images">
+		<f:if condition="{images}">
+			<ul>
+				<f:for each="{images}" as="image">
+					<li>
+						<f:render partial="Media/Main" section="Main" arguments="{
+							file: image,
+							settings: '{fo:settings.get(extension: \'Ps14Modulor\', path: \'images.main\')}'
+						}" />
+					</li>
+				</f:for>
+			</ul>
+		</f:if>
+	</f:section>
+
+	<f:section name="Elements">
+		<f:if condition="{elements}">
+			<ul class="element-group">
+				<f:for each="{elements}" as="element">
+					<li class="element-group__item">
+						<f:if condition="{element.data.title}">
+							<f:render partial="Header/Header" arguments="{header: element.data.title, layout: data.tx_foundation_elements_header, cssClass: 'element-group__item-title'}" />
+						</f:if>
+
+						<f:if condition="{element.data.description}">
+							<f:render partial="Content/Bodytext" arguments="{bodytext: element.data.description}" />
+						</f:if>
+
+						<f:if condition="{element.media}">
+							<ul>
+								<f:for each="{element.media}" as="image">
+									<li>
+										<f:render partial="Media/Main" section="Main" arguments="{
+											file: image,
+											settings: '{fo:settings.get(extension: \'Ps14Modulor\', path: \'images.element\')}'
+										}" />
+									</li>
+								</f:for>
+							</ul>
+						</f:if>
+					</li>
+				</f:for>
+			</ul>
+		</f:if>
+	</f:section>
+</html>

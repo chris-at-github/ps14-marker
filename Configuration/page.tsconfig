@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+	common {
+		elements {
+			ps14_modulor {
+				iconIdentifier = ps14-module-modulor
+				title = LLL:EXT:ps14_modulor/Resources/Private/Language/locallang_tca.xlf:title
+				description = LLL:EXT:ps14_modulor/Resources/Private/Language/locallang_tca.xlf:description
+				tt_content_defValues {
+					CType = ps14_modulor
+				}
+			}
+		}
+
+		show := addToList(ps14_modulor)
+	}
+}
