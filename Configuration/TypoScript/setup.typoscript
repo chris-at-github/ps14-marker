@@ -42,7 +42,7 @@ plugin.tx_ps14marker {
 				cropVariant = default
 				mediaQueries {
 					992 {
-						width = 555
+						width = 750
 						cropVariant = desktop
 						mediaQuery = (min-width: 992px)
 					}
