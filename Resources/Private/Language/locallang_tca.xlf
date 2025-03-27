@@ -16,6 +16,9 @@
 			<trans-unit id="tt_content.variant.image-above">
 				<source>Large image above description</source>
 			</trans-unit>
+			<trans-unit id="tt_content.variant.image-aside-slider">
+				<source>Image with description as slider</source>
+			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">
 				<source>Default</source>

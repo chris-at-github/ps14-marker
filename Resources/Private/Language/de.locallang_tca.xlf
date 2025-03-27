@@ -16,6 +16,9 @@
 			<trans-unit id="tt_content.variant.image-above">
 				<target>Bild oberhalb Beschreibung</target>
 			</trans-unit>
+			<trans-unit id="tt_content.variant.image-aside-slider">
+				<target>Bild mit Beschreibung als Slider</target>
+			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">
 				<target>Default</target>

@@ -19,7 +19,10 @@ mod.wizards.newContentElement.wizardItems {
 	TCEFORM.tt_content {
 		tx_foundation_variant {
 			altLabels.default = LLL:EXT:ps14_marker/Resources/Private/Language/locallang_tca.xlf:tt_content.variant.image-aside
-			addItems.image-above = LLL:EXT:ps14_marker/Resources/Private/Language/locallang_tca.xlf:tt_content.variant.image-above
+			addItems {
+				image-above = LLL:EXT:ps14_marker/Resources/Private/Language/locallang_tca.xlf:tt_content.variant.image-above
+				image-aside-slider = LLL:EXT:ps14_marker/Resources/Private/Language/locallang_tca.xlf:tt_content.variant.image-aside-slider
+			}
 		}
 	}
 [END]

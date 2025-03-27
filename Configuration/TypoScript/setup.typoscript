@@ -22,10 +22,14 @@ tt_content {
 		}
 
 		dataProcessing {
-			200 = Ps14\Foundation\DataProcessing\ModuleProcessor
+			200 = Ps14\Marker\DataProcessing\ModuleProcessor
 			200 {
 				importCss {
 					10 = /assets/css/modules/marker.css
+				}
+
+				importJs {
+					10 = /assets/js/modules/marker.js
 				}
 			}
 		}
